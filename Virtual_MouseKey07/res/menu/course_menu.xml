@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="回到主菜单"
+    	  android:id="@+id/course_main"/>
+    <item android:title="退出程序"
+    	  android:id="@+id/course_exit"/>
+</menu>

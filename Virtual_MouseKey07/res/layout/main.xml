@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#FFFFFF">
+
+	<TextSwitcher android:id="@+id/textSwitcher" android:layout_height="wrap_content"
+		android:layout_width="match_parent"  />
+
+	<GridView android:layout_height="match_parent" android:id="@+id/gridView"
+		android:layout_width="match_parent" android:verticalSpacing="10dp"
+		android:numColumns="2" android:horizontalSpacing="10dp" android:layoutAnimation="@anim/list_anim_layout"/>
+
+
+</LinearLayout>

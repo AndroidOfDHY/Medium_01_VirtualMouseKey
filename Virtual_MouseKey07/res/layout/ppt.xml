@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#ffffff">
+  
+  
+  
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+    
+    	
+    	<TextView 
+    		android:layout_width="wrap_content"
+      	  	android:layout_height="wrap_content"
+      	  	android:text="请先打开PC上的PPT文件之后再使用!"
+      	  	android:layout_centerInParent="true"
+      	  	android:textColor="#FF0000"
+      	  	android:textSize="15dip"/>
+    	    
+        
+   	</RelativeLayout>
+   	
+   	
+   	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    
+    	<ImageView 
+    		android:id="@+id/pptCenter"
+    		android:src="@drawable/playppt"
+    		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:text="play"
+        	android:width="100dip"
+        	android:height="60dip"
+        	android:visibility="invisible"/>
+        	
+        <ImageView
+        	android:id="@+id/pptDown"
+        	android:src="@drawable/downppt"
+    		android:layout_width="80px"
+        	android:layout_height="80px"
+        	android:layout_below="@+id/pptCenter"
+        	android:layout_alignLeft="@+id/pptCenter"
+        	android:layout_alignRight="@+id/pptCenter"
+        	android:text="down"
+        	android:width="100dip"
+        	android:height="60dip"/>
+        	
+        <ImageView 
+        	android:id="@+id/pptUp"
+        	android:src="@drawable/upppt"
+    		android:layout_width="80px"
+        	android:layout_height="80px"
+        	android:layout_above="@+id/pptCenter"
+        	android:layout_alignLeft="@+id/pptCenter"
+        	android:layout_alignRight="@+id/pptCenter"
+        	android:text="up"
+        	android:width="100dip"
+        	android:height="60dip"/>
+        	
+        <ImageView 
+        	android:id="@+id/pptLeft"
+        	android:src="@drawable/leftppt"
+    		android:layout_width="80px"
+        	android:layout_height="80px"
+        	android:layout_toLeftOf="@+id/pptCenter"
+        	android:layout_alignTop="@+id/pptCenter"
+        	android:layout_alignBottom="@+id/pptCenter"
+        	android:text="left"
+        	android:width="100dip"
+        	android:height="60dip"/>
+        	
+        <ImageView 
+        	android:id="@+id/pptRight"
+        	android:src="@drawable/rightppt"
+    		android:layout_width="80px"
+        	android:layout_height="80px"
+        	android:layout_toRightOf="@+id/pptCenter"
+        	android:layout_alignTop="@+id/pptCenter"
+        	android:layout_alignBottom="@+id/pptCenter"
+        	android:text="right"
+        	android:width="100dip"
+        	android:height="60dip"/>				
+        	
+    
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+    
+    	
+       	<Button
+       		android:id="@+id/pptSensor" 
+    		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="放大"
+        	android:layout_weight="1"/>
+        	
+        	
+        <Button 
+    		android:id="@+id/pptClose"
+    		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="缩小"
+        	android:layout_weight="1"/>
+    	    
+        
+   	</LinearLayout>
+    
+    
+</RelativeLayout>
